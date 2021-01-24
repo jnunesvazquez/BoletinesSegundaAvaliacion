@@ -1,5 +1,5 @@
 
-package com.programacion.boletin_12;
+package com.Programacion.Boletin_12;
 
 import javax.swing.JOptionPane;
 
@@ -16,7 +16,7 @@ public class Garaxe {
     private float cartosRecibidos;
     private float cartosDevoltos;
 
-    public Garaxe(com.programacion.boletin_12.Coche coche) {
+    public Garaxe(com.Programacion.Boletin_12.Coche coche) {
         this.coche = coche;
     }
 

@@ -1,5 +1,5 @@
 
-package com.programacion.boletin_12;
+package com.Programacion.Boletin_12;
 
 /**
  * Clase de tipo coche

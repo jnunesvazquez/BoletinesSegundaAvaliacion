@@ -1,5 +1,5 @@
 
-package com.programacion.boletin_13;
+package com.Programacion.Boletin_13;
 
 public class Mamifero implements IPodeCaminar{
 

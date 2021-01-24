@@ -1,5 +1,5 @@
 
-package com.programacion.boletin_14;
+package com.Programacion.Boletin_14;
 
 public class TemperaturaErradaExcepcion extends Exception{
     
