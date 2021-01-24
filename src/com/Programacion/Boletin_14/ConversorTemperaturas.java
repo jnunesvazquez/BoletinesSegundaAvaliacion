@@ -15,12 +15,15 @@ public class ConversorTemperaturas {
         }
     }
     
-    public void centigradosAReamur(float centigrados) throws TemperaturaErradaExcepcion{
-         if (centigrados < temperaturaMinima){
-            throw new TemperaturaErradaExcepcion("La temperatura tiene que ser superior a 80ºC");
-        }else{
+    public void centigradosAReamur(float centigrados){
+        try{
+            if (centigrados < temperaturaMinima){
+                throw new TemperaturaErradaExcepcion("La temperatura tiene que ser superior a 80ºC");
+            }
             double reamur = (centigrados * 0.8);
             System.out.println("A solucion seria: " + reamur);
+        }catch (TemperaturaErradaExcepcion es){
+            System.out.println(es.getMessage());
         }
     }
 }
