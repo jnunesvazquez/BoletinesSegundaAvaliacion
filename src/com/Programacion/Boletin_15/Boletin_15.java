@@ -3,6 +3,11 @@ package com.Programacion.Boletin_15;
 
 import javax.swing.JOptionPane;
 
+/**
+ * 12/02/2021
+ * @author Joel Nunes
+ * Programa de xestion de arrays
+ */
 public class Boletin_15 {
 
     public static void main(String[] args) {

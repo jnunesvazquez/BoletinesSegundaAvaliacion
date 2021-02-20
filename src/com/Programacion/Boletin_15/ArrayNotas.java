@@ -4,11 +4,20 @@ package com.Programacion.Boletin_15;
 import java.util.Arrays;
 import javax.swing.JOptionPane;
 
+/**
+ * Clase para trabajar sobre arrays de notas
+ */
 public class ArrayNotas {
     
     public int [] notas;
     public int [] nomeAlumno;
 
+    /**
+     * Metodo para introducir los datos en el array
+     * @param notas
+     * @param nomeAlumno
+     * @return
+     */
     public int [] introducirDatos(int [] notas, String [] nomeAlumno){
         for(int i = 0; i < notas.length; i++){
             nomeAlumno[i] = JOptionPane.showInputDialog("Introduce el nombre del alumno"); 
@@ -18,7 +27,12 @@ public class ArrayNotas {
         }
         return notas;
     }
-    
+
+    /**
+     * Metodo para visualizar as notas dos alumnos
+     * @param notas
+     * @param nomeAlumno
+     */
     public void visualizarNotas(int [] notas, String [] nomeAlumno){
         int aprobados = 0;
         int suspensos = 0;
@@ -34,7 +48,11 @@ public class ArrayNotas {
         }
         System.out.println("\nAprobados ----> " + aprobados + "\nSuspensos ----> " + suspensos);
     }
-    
+
+    /**
+     * Metodo para calcular e mostrar a nota media da clase
+     * @param notas
+     */
     public void notaMediaClase(int [] notas){
         int suma = 0;
         for (int i = 0; i < notas.length; i++) {
@@ -43,7 +61,12 @@ public class ArrayNotas {
         int media = suma / notas.length;
         System.out.printf("\n Nota media del curso: " + media);
     }
-    
+
+    /**
+     * Metodo para mostrar a nota mais alta
+     * @param notas
+     * @param nomeAlumno
+     */
     public void notaMasAlta(int [] notas, String [] nomeAlumno) {
 	int masAlta = 0;
 	String alumno = null;
@@ -55,7 +78,12 @@ public class ArrayNotas {
 	}
         System.out.println("\n Nota más alta: " + masAlta + " del alumno " + alumno);
     }
-    
+
+    /**
+     * Metodo para buscar a nota dun alumno introducido por teclado
+     * @param notas
+     * @param nomeAlumno
+     */
     public void buscarElementoTeclado(int [] notas, String [] nomeAlumno){
         boolean atopado = true;
         String nome = JOptionPane.showInputDialog("Introduce o nome do alumno que queres buscar");
@@ -69,7 +97,13 @@ public class ArrayNotas {
             System.out.println("No encontrado");
         }
     }
-    
+
+    /**
+     * Metodo para buscar a nota dun alumno introducido como teclado
+     * @param notas
+     * @param nomeAlumno
+     * @param nome
+     */
     public void buscarElementoParametro(int [] notas, String [] nomeAlumno, String nome){
         boolean atopado = true;
         for (int i = 0; i < notas.length; i++){
@@ -82,7 +116,12 @@ public class ArrayNotas {
             System.out.println("No encontrado");
         }
     }
-    
+
+    /**
+     * Metodo para ordenar as notas de menor a maior da clase
+     * @param notas
+     * @param nomeAlumno
+     */
     public void ordenarNotas(int [] notas, String [] nomeAlumno){
         int auxnota;
         String auxnome = null;

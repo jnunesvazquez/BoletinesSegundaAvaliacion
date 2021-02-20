@@ -1,10 +1,19 @@
 
 package com.Programacion.Boletin_14;
 
+/**
+ * Clase para converter as temperaturas
+ */
 public class ConversorTemperaturas {
-    
+
     public static final float temperaturaMinima = 80;
-    
+
+    /**
+     * Metodo para pasar de grados centigrados a fahrenheit
+     * @param centigrados
+     * @return a temperatura en fahrenheit
+     * @throws TemperaturaErradaExcepcion
+     */
     public double centigradosAFahrenheit(float centigrados) throws TemperaturaErradaExcepcion{
         if (centigrados < temperaturaMinima){
             throw new TemperaturaErradaExcepcion("La temperatura tiene que ser superior a 80ºC");
@@ -14,7 +23,11 @@ public class ConversorTemperaturas {
             return fahrenheit;
         }
     }
-    
+
+    /**
+     * Metodo para pasar de grados centigrados a grados reamur
+     * @param centigrados
+     */
     public void centigradosAReamur(float centigrados){
         try{
             if (centigrados < temperaturaMinima){

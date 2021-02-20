@@ -1,6 +1,11 @@
 
 package com.Programacion.Boletin_13;
 
+/**
+ * 20/01/2021
+ * @author Joel Nunes
+ * Programa de xestion de interfaces
+ */
 public class Boletin_13 {
 
     public static void main(String[] args) {

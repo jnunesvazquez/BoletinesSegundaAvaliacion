@@ -1,6 +1,11 @@
 
 package com.Programacion.Boletin_14;
 
+/**
+ * 2/02/2021
+ * @author Joel Nunes
+ * Programa de xestion de errores
+ */
 public class Boletin_14 {
 
     public static void main(String[] args){

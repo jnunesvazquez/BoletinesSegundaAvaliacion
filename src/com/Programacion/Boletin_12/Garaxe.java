@@ -16,26 +16,50 @@ public class Garaxe {
     private float cartosRecibidos;
     private float cartosDevoltos;
 
+    /**
+     * Constructor parametrizado
+     * @param coche  Que devuelve el objeto
+     */
     public Garaxe(com.Programacion.Boletin_12.Coche coche) {
         this.coche = coche;
     }
 
+    /**
+     * Getter
+     * @return tempo de estacionamento
+     */
     public int getTempo() {
         return tempo;
     }
 
+    /**
+     * Getter
+     * @return precio de estacionamiento
+     */
     public double getPrecioEstacionamiento() {
         return precioEstacionamiento;
     }
 
+    /**
+     * Getter
+     * @return os cartos dados polo cliente
+     */
     public float getCartosRecibidos() {
         return cartosRecibidos;
     }
 
+    /**
+     * Getter
+     * @return a volta que devolve a maquina
+     */
     public float getCartosDevoltos() {
         return cartosDevoltos;
     }
-    
+
+    /**
+     * Metodo para comprobar as prazas de garaxe
+     * @param coche
+     */
     public void comprobarPlazasGaraxe(Coche coche){
         if (numeroCoches < nºMaximoPlazas){
             System.out.println("Plazas disponibles: " + (nºMaximoPlazas - numeroCoches) + "\n");
@@ -45,7 +69,11 @@ public class Garaxe {
             System.out.println("No hay más plazas disponibles");
         }
     }
-    
+
+    /**
+     * Metodo para calcular o prezo do aparcamento
+     * @return precio de estacionamiento
+     */
     public double calcularPrezoAparcamento(){
         if (numeroCoches < nºMaximoPlazas){
             do {
@@ -66,7 +94,10 @@ public class Garaxe {
         }
         return precioEstacionamiento;
     }
-    
+
+    /**
+     * Metodo para mostrar la factura
+     */
     public void amosarFactura(){
         System.out.println("\tFactura" 
                 + "\nMatricula: " + coche.toString() 
