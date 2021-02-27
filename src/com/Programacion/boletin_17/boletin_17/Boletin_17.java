@@ -7,6 +7,11 @@ import com.Programacion.boletin_17.Libreria.MetodosLibreria;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
+/**
+ * 27/02/2021
+ * @author Joel Nunes
+ * Programa de xestion dunha libreria
+ */
 public class Boletin_17 {
 
     public static void main(String[] args) throws ExcepcionArray {

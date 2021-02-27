@@ -6,12 +6,25 @@ import java.util.Collections;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
 
+/**
+ * Clase para manexar a nosa libreria
+ */
 public class MetodosLibreria {
+
+    /**
+     * Metodo para engadir un libro ao ArrayList
+     * @param listaLibros
+     */
      public static void engadirLibro(ArrayList<Libro> listaLibros){
         Libro ele = engadirElementos("Añadiendo libro: ");
         listaLibros.add(ele);
     }
-    
+
+    /**
+     * Metodo para engadir os valores a un libro
+     * @param mensaxe
+     * @return que devolve o libro
+     */
     public static Libro engadirElementos(String mensaxe){
         String titulo = JOptionPane.showInputDialog("Titulo: ");
         String autor = JOptionPane.showInputDialog("Autor: ");
@@ -21,7 +34,12 @@ public class MetodosLibreria {
         Libro l = new Libro(titulo, autor, ISBN, prezo, numeroUnidades);
         return l;
     }
-    
+
+    /**
+     * Metodo para vender un libro
+     * @param listaLibros
+     * @throws ExcepcionArray
+     */
     public static void venderLibro(ArrayList<Libro> listaLibros) throws ExcepcionArray{
         if (listaLibros == null){
             throw new ExcepcionArray("Tienes un error: ");
@@ -48,7 +66,12 @@ public class MetodosLibreria {
             }
         }
     }
-    
+
+    /**
+     * Metodo para dar de baixa un libro
+     * @param listaLibros
+     * @throws ExcepcionArray
+     */
     public static void baixaLibro(ArrayList<Libro> listaLibros) throws ExcepcionArray{
         if (listaLibros == null){
             throw new ExcepcionArray("Tienes un error: ");
@@ -64,7 +87,12 @@ public class MetodosLibreria {
             }
         }
     }
-    
+
+    /**
+     * Metodo para consultar un libro
+     * @param listaLibros
+     * @throws ExcepcionArray
+     */
     public static void consultarLibro(ArrayList<Libro> listaLibros) throws ExcepcionArray{
         if (listaLibros == null){
             throw new ExcepcionArray("Tienes un error: ");
@@ -82,7 +110,12 @@ public class MetodosLibreria {
             }
         }
     }
-    
+
+    /**
+     * Metodo para mostrar a nosa libreria
+     * @param listaLibros
+     * @throws ExcepcionArray
+     */
     public static void amosarLibreria(ArrayList<Libro> listaLibros) throws ExcepcionArray{
         if (listaLibros == null){
             throw new ExcepcionArray("Tienes un error: ");

@@ -1,6 +1,9 @@
 
 package com.Programacion.boletin_17.Libreria;
 
+/**
+ * Clase para crear os nosos libros
+ */
 public class Libro implements Comparable<Libro>{
     private String titulo;
     private String autor;
@@ -11,6 +14,14 @@ public class Libro implements Comparable<Libro>{
     public Libro(){
     }
 
+    /**
+     * Constructor parametrizado
+     * @param titulo
+     * @param autor
+     * @param ISBN
+     * @param prezo
+     * @param numeroUnidades
+     */
     public Libro(String titulo, String autor, String ISBN, float prezo, int numeroUnidades) {
         this.titulo = titulo;
         this.autor = autor;
@@ -64,6 +75,11 @@ public class Libro implements Comparable<Libro>{
         return "Libro {" + "titulo=" + titulo + ", autor=" + autor + ", ISBN=" + ISBN + ", prezo=" + prezo + ", numeroUnidades=" + numeroUnidades + '}';
     }
 
+    /**
+     * Metodo para ordenar el ArrayList del objeto Libro
+     * @param t que equivale al objeto Libro
+     * @return
+     */
     @Override
     public int compareTo(Libro t) {
         if ((this.titulo.compareToIgnoreCase(t.titulo)) < 0){
